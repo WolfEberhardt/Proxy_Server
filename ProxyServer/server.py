@@ -11,7 +11,6 @@ class Proxy:
     IP = "localhost"
     def __init__(self) -> None:
         self.running = True
-        self.toast = ToastNotifier()
         with open(os.path.dirname(__file__) + "/files/proxy.log", "w", encoding="utf-8") as logging_file:
             logging_file.write("")
         logging.basicConfig(format="%(levelname)s:%(name)s:%(message)s", filename=os.path.dirname(__file__) + "/files/proxy.log", level=logging.DEBUG, encoding="utf-8")
