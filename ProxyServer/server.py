@@ -2,11 +2,8 @@ import socket
 import select
 import threading
 import os
-from win10toast import ToastNotifier
 import logging
-import argparse
-import keyboard
-import time
+
 
 class Proxy:
     PORT = 8888
